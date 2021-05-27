@@ -12,7 +12,12 @@ namespace Methods_Rehash
 
         public override string SayHello() //changes the method for this class
         {
-            return base.SayHello() + ". I am a Student";
+            string result = base.SayHello() + ". I am a Student";
+            return result;
+            //return base.SayHello() + ". I am a Student"; 
+            //Above is a 1 line version
+            //Can also turn it into:
+            //string result1 = "Hello, my name is" + LastName + ", " + FirstName + ". I am a Student";
         }
 
     }

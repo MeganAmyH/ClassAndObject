@@ -50,7 +50,7 @@ namespace Methods_Rehash
             string stname = st.SayHello();
             Console.WriteLine(stname);
 
-            Staff_Member staff1 = new Staff_Member
+            Staff_Member _staff1 = new Staff_Member
             {
                 Department = "Learning",
                 FirstName = "Albert",
@@ -58,7 +58,8 @@ namespace Methods_Rehash
                 StartDate = new DateTime(2021, 05, 24) //How to type DateTime, NOT 5/24/2021
             };
 
-            string _fnamestaff = staff1.SayHello();
+            string _fnamestaff = _staff1.SayHello();
+            Console.WriteLine(_fnamestaff);
             
 
 
