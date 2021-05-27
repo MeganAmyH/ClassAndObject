@@ -9,10 +9,10 @@ namespace Methods_Rehash
             int call = sum(2, 3);
             Console.WriteLine(call);
 
-            Person p = new Person();
+            Person p = new Student();
             p.LastName = "Ngoudjou";
             p.FirstName = "Albert";
-            Person m = new Person();
+            Person m = new Student();
             m.FirstName = "Megan";
             m.LastName = "Heberlein";
             string q = m.SayHello();
@@ -23,11 +23,11 @@ namespace Methods_Rehash
             string w = p.SayHello();
             Console.WriteLine(q);
 
-            Person inst = new Person("Baseley", "Anna");
+            Staff_Member inst = new Staff_Member { FirstName = "Anna", LastName = "Baseley" };
             string ans = p.SayHello();
             Console.WriteLine(ans);
 
-            Person pt = new Person()
+            Staff_Member pt = new Staff_Member()
             {
                 FirstName = "Balalal",
                 LastName = "Heyo"
@@ -52,7 +52,7 @@ namespace Methods_Rehash
 
             Staff_Member _staff1 = new Staff_Member
             {
-                Department = "Learning",
+                Department = EnumDepartment.Learning,
                 FirstName = "Albert",
                 LastName = "Ngoudjou",
                 StartDate = new DateTime(2021, 05, 24) //How to type DateTime, NOT 5/24/2021
@@ -80,6 +80,21 @@ namespace Methods_Rehash
             int result = a + b;
             return result;
         }
+    }
+
+    enum EnumDepartment
+    {
+        Admission=1,
+        Learning,
+        Marketing,
+    }
+
+    enum EnumBootcamp
+    {
+        FSFE,
+        FSBE,
+        AHFSBE,
+        AHFSFE
     }
 }
 

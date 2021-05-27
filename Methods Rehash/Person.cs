@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Methods_Rehash
 {
-    class Person
+    abstract class Person //abstract class means you can't use the class Person - must use Student or Staff_Member
     {
+
+
         private string v1;
         private string v2;
 
@@ -39,5 +41,7 @@ namespace Methods_Rehash
         {
             return "Hello, my name is " + LastName + ", " + FirstName;
         }
+        public abstract string FullName();
+
     }
 }

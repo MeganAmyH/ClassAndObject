@@ -10,6 +10,11 @@ namespace Methods_Rehash
         public string Bootcamp { get; set; }
         public int Year { get; set; }
 
+        public override string FullName()
+        {
+            return FirstName + " " + LastName;
+        }
+
         public override string SayHello() //changes the method for this class
         {
             string result = base.SayHello() + ". I am a Student";
